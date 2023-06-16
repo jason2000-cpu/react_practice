@@ -45,7 +45,7 @@ export default class TodoList extends Component {
                     <div className='todo-list'>
                         <ul>
                          {list.map((item, index) => (
-                          <li key={index} className={this.state.selectedItem ? 'is-done': ''} onClick={this.handleDone(item)}>{item}</li>
+                          <li key={index} className={this.state.selectedItem ? 'is-done': ''} onClick={this.handleDone}>{item}</li>
                          ))}
                         </ul>
                     </div>
